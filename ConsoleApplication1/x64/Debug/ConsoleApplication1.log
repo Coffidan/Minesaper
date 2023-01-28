@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+c:\users\stas\source\repos\consoleapplication1\consoleapplication1\consoleapplication1.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\stas\source\repos\consoleapplication1\consoleapplication1\consoleapplication1.cpp(68): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  ConsoleApplication1.vcxproj -> C:\Users\Stas\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
