@@ -5,7 +5,7 @@ using namespace sf;
 
 int main()
 {
-    srand(time(0));// для рандома 
+    srand(time(NULL));// для рандома 
 
     RenderWindow window(VideoMode(400, 400), "Dota 3 Beta test");//создаем окно 400 на 400
 
