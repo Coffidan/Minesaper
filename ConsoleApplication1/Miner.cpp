@@ -14,22 +14,22 @@ int main()
     int arr[12][12];// массив сетки
 
     Texture t;
-    t.loadFromFile("Texture\\tiles.png");//ставим картинку
+    t.loadFromFile("C:\\Users\\Взрослая академия\\Documents\\ConsoleApplication2\\Texture\\tiles.png");//ставим картинку
     Sprite tiles(t);
 
     for (int i = 1; i <= 10; i++)//рандомная позиция бомб
         for (int j = 1; j <= 10; j++)
         {
-            arr[i][j] = 10;
-            if (rand() % 5 == 0)   array[i][j] = 9;
-            else array[i][j] = 0;
+            arr[i][j] = 10;// придаем масиву значение плитки
+            if (rand() % 5 == 0)   array[i][j] = 9;//придаем масиву значение бомбы
+            else array[i][j] = 0;//иначе он равен 0
         }
 
     for (int i = 1; i <= 10; i++)//рандомная позиция цифр
         for (int j = 1; j <= 10; j++)
         {
             int b = 0;// новый коэфицинет
-            if (array[i][j] == 9) continue;// переход к следующему действию
+            if (array[i][j] == 9) continue;// переход к следующему действию, смотрим гед стоят бомбы и ставим цыфры в зависимости бомб
             if (array[i + 1][j] == 9) b++;
             if (array[i][j + 1] == 9) b++;
             if (array[i - 1][j] == 9) b++;
@@ -38,7 +38,7 @@ int main()
             if (array[i - 1][j - 1] == 9) b++;
             if (array[i - 1][j + 1] == 9) b++;
             if (array[i + 1][j - 1] == 9) b++;
-            array[i][j] = b;
+            array[i][j] = b;// при равниваем полученую цифру
         }
 
     while (window.isOpen())// открываем окно
