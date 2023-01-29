@@ -14,7 +14,7 @@ int main()
     int arr[12][12];// массив сетки
 
     Texture t;
-    t.loadFromFile("C:\\Users\\Взрослая академия\\Documents\\ConsoleApplication2\\Texture\\tiles.png");//ставим картинку
+    t.loadFromFile("Texture\\tiles.png");//ставим картинку
     Sprite tiles(t);
 
     for (int i = 1; i <= 10; i++)//рандомная позиция бомб
